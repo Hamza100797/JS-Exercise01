@@ -9,24 +9,32 @@ More Guests: You just found a bigger dinner table, so now more space is availabl
 */
 
 
-guestList = ['Ali', 'Hamza', 'Mahnoor', 'Ansar', 'Sajal'];
+guestList = ['Ali', 'Hamza', 'Mahnoor', 'Shery', 'Ansar', 'Sajal'];
 guestList.pop()
 guestList.push('Khurshid Afsar')
 guestList.forEach(e => {
     console.log(`${e},Welcome to Dinner.`)
 });
-console.log('Sorry For connivent,We just book bigger Dinner Table,Yours presence is highly appreciable')
+console.log('Sorry For connivent,We just book bigger Dinner Table,Yours presence is highly appreciable');
+
+//Adding element in Start of array
 guestList.unshift('Omair Munir')
 
-var middleIndex = guestList.length / 2
+
+//Finding middle index of array
+var middleIndex = Math.floor(guestList.length / 2)
 console.log(middleIndex)
-guestList.slice()
+
+//Adding new element 
+guestList.splice(middleIndex, 0, 'Komol');
 
 
 
 
 
-console.log(`New Updated List of guests \n`)
+console.log(`New Updated List of guests \n`);
+
+// For Each loop 
 guestList.forEach(e => {
-    console.log(`Welcome to dinner,Mr/Mrs${e}`)
+    console.log(`Welcome to dinner,Mr/Mrs ${e}`)
 })
