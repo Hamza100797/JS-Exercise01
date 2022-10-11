@@ -12,8 +12,8 @@ If the calling line includes a value for the number of tracks, add that value to
 
 const make_album = (artistName, albumTitle, tracks = 0) => {
     let albumDetails = {
-        'Artist Name': `${artistName}`,
-        'Album Title': `${albumTitle}`,
+        Artist_Name: `${artistName}`,
+        Album_Title: `${albumTitle}`,
     }
     if (tracks) {
         albumDetails['tracks'] = tracks
