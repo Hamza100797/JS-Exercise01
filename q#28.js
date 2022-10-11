@@ -33,7 +33,6 @@ else if (age >= 20 && age < 65) {
 else if (age > 65) {
     console.log('person is an elder.')
 }
-
 else {
     console.log('Age is not correct,please verify it first.')
 }
